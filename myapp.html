@@ -7,127 +7,115 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #f5f7fa;
+      background-color: #000000;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
+      color: white;
     }
     .header {
       background-color: #003366;
       color: white;
       padding: 16px;
-      font-size: 24px;
-      font-weight: 600;
+      font-size: 28px;
+      font-weight: 700;
       box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
-    .banner {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-      display: block;
-    }
-    .welcome {
+    .welcome, .motivation {
       margin-top: 20px;
-      font-size: 20px;
-      color: #222;
+      font-size: 22px;
       font-weight: 500;
       padding: 0 12px;
     }
     .motivation {
       margin-top: 10px;
-      font-size: 17px;
-      color: #555;
-      padding: 0 12px;
+      font-size: 18px;
     }
     .custom-button {
       display: block;
       width: 90%;
-      max-width: 350px;
-      margin: 18px auto;
+      max-width: 380px;
+      margin: 22px auto;
       padding: 20px;
-      font-size: 18px;
+      font-size: 19px;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
-      animation: blink 1.2s infinite;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: blink 1.5s infinite;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
       transition: transform 0.1s ease;
     }
     .custom-button:active {
-      transform: scale(0.97);
+      transform: scale(0.96);
     }
     .btn-red    { background-color: #d93025; }
     .btn-green  { background-color: #188038; }
     .btn-brown  { background-color: #8B4513; }
     .btn-black  { background-color: #000000; }
+    .btn-blue   { background-color: #1a73e8; }
     @keyframes blink {
       0%   { opacity: 1; }
       50%  { opacity: 0.7; }
       100% { opacity: 1; }
     }
     .share-button {
-      margin-top: 25px;
+      margin-top: 30px;
       padding: 12px 24px;
       font-size: 16px;
       background-color: #0066cc;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .copyright {
       margin-top: 25px;
-      font-size: 13px;
-      color: #888;
+      font-size: 14px;
       padding-bottom: 10px;
     }
-    #password-screen {
+    #passwordPrompt {
       position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: #f5f7fa;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      z-index: 9999;
+      z-index: 1000;
     }
-    #password-screen input {
+    #passwordPrompt input {
       padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
+      font-size: 18px;
+      margin: 10px;
       border-radius: 6px;
-      width: 200px;
-      text-align: center;
+      border: none;
     }
-    #password-screen button {
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #003366;
+    #passwordPrompt button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 6px;
+      background-color: #0066cc;
       color: white;
       border: none;
-      border-radius: 6px;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <!-- Password screen -->
-  <div id="password-screen">
-    <h3>🔒 Enter Password to Continue</h3>
-    <input type="password" id="password-input" placeholder="Enter Password">
-    <button onclick="checkPassword()">Submit</button>
+  <div id="passwordPrompt">
+    <h2>🔥 SGS EXAM CRACKER Access 🔥</h2>
+    <p>🌟 मैदान जल जाये, फाता जीत ज्यादा जल जाये यही है काफिला की और सुचना की और औज की और ज़ान की लडाई की याद है! 💪</p>
+    <input type="password" id="userPassword" placeholder="Enter Password">
+    <button onclick="checkPassword()">Enter</button>
   </div>
 
-  <div class="header">
-    SGS EXAM CRACKER
-  </div>
-
-  <!-- Banner image -->
-  <img src="https://i.ibb.co/rGCwPg8c/banner.jpg" alt="Banner" class="banner">
+  <div class="header">SGS EXAM CRACKER</div>
 
   <div class="welcome">
     🙏 Welcome to SGS EXAM CRACKER में आपका स्वागत है! 🎉
@@ -139,17 +127,17 @@
   <button class="custom-button btn-red" onclick="openLink('https://drive.google.com/drive/folders/1kuiMOHnkRewT9nN4RBaJyrGIjJJBDLtk?usp=sharing')">
     🔥 SSC GD 2026 रावण बैच
   </button>
-
   <button class="custom-button btn-green" onclick="openLink('https://drive.google.com/drive/folders/1mXVIzRNVTBIoLjDCAT-7Jome1AZ7n6SY?usp=sharing')">
     🚓 BIHAR POLICE
   </button>
-
   <button class="custom-button btn-brown" onclick="openLink('https://drive.google.com/drive/folders/1ZNsSgbboY-uBs2CxYyZhhtaT4PQN-pky?usp=sharing')">
     📦 SSC MTS
   </button>
-
   <button class="custom-button btn-black" onclick="openLink('https://drive.google.com/drive/folders/1CqVZz4A2JqrqMYambXq7QfkYPborLiIP?usp=sharing')">
     📚 SSC ALL EXAM
+  </button>
+  <button class="custom-button btn-blue" onclick="openLink('https://drive.google.com/drive/folders/1FL05B6bjAayerJB0E0sJTOA-2YVMzx9N?usp=sharing')">
+    🎥 WEB SERIES
   </button>
 
   <button class="share-button" onclick="shareApp()">
@@ -161,24 +149,9 @@
   </div>
 
   <script>
-    if (localStorage.getItem('mrsgs_unlocked') === 'true') {
-      document.getElementById('password-screen').style.display = 'none';
-    }
-
-    function checkPassword() {
-      var password = document.getElementById('password-input').value;
-      if (password === 'MRSGS') {
-        localStorage.setItem('mrsgs_unlocked', 'true');
-        document.getElementById('password-screen').style.display = 'none';
-      } else {
-        alert('❌ Incorrect password!');
-      }
-    }
-
     function openLink(url) {
       window.open(url, '_blank');
     }
-
     function shareApp() {
       if (navigator.share) {
         navigator.share({
@@ -190,6 +163,15 @@
         alert('Sharing not supported on this device.');
       }
     }
+    function checkPassword() {
+      const password = document.getElementById('userPassword').value;
+      if (password === "MRSGS") {
+        document.getElementById('passwordPrompt').style.display = 'none';
+      } else {
+        alert("Wrong password. Try again.");
+      }
+    }
   </script>
+
 </body>
 </html>
