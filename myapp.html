@@ -19,6 +19,13 @@
       font-weight: 600;
       box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+    .banner {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
     .welcome {
       margin-top: 20px;
       font-size: 20px;
@@ -119,6 +126,9 @@
     SGS EXAM CRACKER
   </div>
 
+  <!-- Banner image -->
+  <img src="https://i.ibb.co/rGCwPg8c/banner.jpg" alt="Banner" class="banner">
+
   <div class="welcome">
     🙏 Welcome to SGS EXAM CRACKER में आपका स्वागत है! 🎉
   </div>
@@ -151,7 +161,6 @@
   </div>
 
   <script>
-    // check if password is already entered
     if (localStorage.getItem('mrsgs_unlocked') === 'true') {
       document.getElementById('password-screen').style.display = 'none';
     }
